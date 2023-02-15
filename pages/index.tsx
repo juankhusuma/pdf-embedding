@@ -57,7 +57,7 @@ const Home: NextPage = () => {
         <div className='mt-20 mx-10'>
           {
             result.map(res => (
-              <div className='my-10 border-2 border-black p-5'>
+              <div key={res.id} className='my-10 border-2 border-black p-5'>
                 <h1 className='font-bold text-xl'>{res.file_name} - ({Math.round(res.similarity * 100000) / 1000}%)</h1>
                 <p>{res.content}</p>
               </div>
