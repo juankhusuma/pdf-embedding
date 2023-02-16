@@ -1,5 +1,12 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+Note: before deploying make sure you've set your env variables on vercel
+```
+NEXT_PUBLIC_SUPABASE_URL="<YOUR SUPABASE URL>"
+NEXT_PUBLIC_SUPABASE_KEY="<YOUR SUPABASE KEY>"
+NEXT_PUBLIC_OPENAI_KEY="<YOUR OPENAI KEY>"
+```
+
 ## Getting Started
 
 First, run the development server:
