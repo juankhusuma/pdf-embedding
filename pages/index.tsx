@@ -26,7 +26,7 @@ async function query(openai: OpenAIApi, app: SupabaseClient, input: string) {
   const { data: inputEmb } = data;
   const res = await app.rpc("search_docs", {
     match_count: 10,
-    similarity_threshold: 0.5,
+    similarity_threshold: 0.8,
     query_embedding: inputEmb[0].embedding,
   })
   return res.data;
